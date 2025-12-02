@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: #e6e8eb;
+    background: radial-gradient(1200px 600px at 10% 10%, rgba(191,167,122,0.03), transparent 8%), #0f1720;
+}
+
+header{
+    height: 80px;
+    display:flex;
+    align-items:center;
+    padding: 0 24px;
+    background: transparent;
+    color: #e6e8eb;
+}
+
+.container-principal{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: row;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 48px 24px;
+}
+
+.videos-container{
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    width: 450px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border: 1px solid rgba(255,255,255,0.03);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(11,14,17,0.6);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.videos-container:hover{
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 0px 30px #bfa77a;;
+}
+
+.videos-container iframe {
+    align-self: center;
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 12px;
+    background: #000;
+}
+
+.videos-container h2{
+    align-self: flex-start;
+    margin: 6px 0 4px 6px;
+    font-weight: 600;
+    color: #bfa77a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+}
+
+.videos-container p{
+    align-self: flex-start;
+    font-weight: 400;
+    color: #9aa6af;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    width: calc(100% - 12px);
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+}
+
+.header-text{
+    font-weight: 700;
+    color: #e6e8eb;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background: linear-gradient(180deg, rgba(191,167,122,0.1), rgba(191,167,122,0.05));
+    border-bottom: 1px solid rgba(191,167,122,0.3);
+    text-align:center;
+}
+
+footer{
+    width:100%;
+    padding: 32px 24px;
+    background: linear-gradient(180deg, rgba(191,167,122,0.05), rgba(191,167,122,0.1));
+    border-top: 1px solid rgba(191,167,122,0.3);
+    color: #bfa77a;
+    text-align:center;
+}
+
+@media (max-width: 520px){
+    .videos-container{width:100%;}
+}
